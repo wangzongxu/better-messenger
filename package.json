@@ -34,7 +34,10 @@
     "tslib": "^1.10.0",
     "typescript": "^3.7.4"
   },
-  "keywords": [],
+  "keywords": [
+    "iframe",
+    "micro front-end"
+  ],
   "author": "wangzongxu",
   "license": "MIT"
 }
