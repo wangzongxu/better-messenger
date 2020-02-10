@@ -1,0 +1,40 @@
+{
+  "name": "better-messenger",
+  "version": "0.1.0",
+  "description": "a better way to communicate for the iframe-based micro front-end",
+  "scripts": {
+    "build": "rollup -c --environment TARGET:production",
+    "dev": "rollup -w -c --environment TARGET:development",
+    "fix": "eslint --fix ./src/*.ts"
+  },
+  "main": "lib/index.js",
+  "unpkg": "dist/index.js",
+  "module": "es/index.js",
+  "types": "types/index.d.ts",
+  "files": [
+    "dist",
+    "lib",
+    "es",
+    "src",
+    "types"
+  ],
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^2.19.0",
+    "@typescript-eslint/parser": "^2.19.0",
+    "eslint": "^6.8.0",
+    "eslint-config-standard": "^14.1.0",
+    "eslint-plugin-import": "^2.20.1",
+    "eslint-plugin-node": "^11.0.0",
+    "eslint-plugin-promise": "^4.2.1",
+    "eslint-plugin-standard": "^4.0.1",
+    "rollup": "^1.21.2",
+    "rollup-plugin-eslint": "^7.0.0",
+    "rollup-plugin-replace": "^2.2.0",
+    "rollup-plugin-typescript2": "^0.24.2",
+    "tslib": "^1.10.0",
+    "typescript": "^3.7.4"
+  },
+  "keywords": [],
+  "author": "wangzongxu",
+  "license": "MIT"
+}

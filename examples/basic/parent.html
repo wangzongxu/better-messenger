@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Parent</title>
+    <style>
+      iframe {
+        border: 1px solid purple;
+      }
+    </style>
+</head>
+<body>
+    <h1>Parent</h1>
+    <h2></h2><button onclick="get()">get child content</button>
+
+    <div>
+        <iframe id="child" src="child.html" frameborder="0"></iframe>
+    </div>
+</body>
+<script src="../../dist/index.js"></script>
+<script>
+  const { Client } = betterMessenger
+
+  const child = document.getElementById('child')
+  const client = new Client(child.contentWindow, '*')
+
+  function get() {
+    client.request('GET_CONTENT').then(res => {
+      document.querySelector('h2').textContent = res.data
+    }).catch(err => {
+      alert(err)
+    })
+  }
+</script>
+</html>

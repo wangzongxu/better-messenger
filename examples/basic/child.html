@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Child</title>
+</head>
+<body>
+    <h1>Child iframe</h1>
+    <h2>Child Content</h2>
+</body>
+<script src="../../dist/index.js"></script>
+<script>
+  const { Server } = betterMessenger
+  const server = new Server()
+
+  server.listen('GET_CONTENT', function(req, res) {
+    const content = document.querySelector('h2').textContent
+    res.response(true, content)
+  })
+</script>
+</html>
