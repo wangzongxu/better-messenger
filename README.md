@@ -65,7 +65,7 @@ window.addEventListener('message', function(e) {
 ## Install
 
 ```bash
-npm install -S better-message
+npm install -S better-messenger
 ```
 
 ## Usage
@@ -74,7 +74,7 @@ npm install -S better-message
 
 ```js
 // user-name.js
-import { Client } from 'better-message.js'
+import { Client } from 'better-messenger.js'
 
 const client = new Client(iframe.contentWindow, '*')
 const userId = 1
@@ -88,7 +88,7 @@ client.request('GET_USER_NAME', userId)
 
 
 // user-info.js
-import { Server } from 'better-message.js'
+import { Server } from 'better-messenger.js'
 
 const server = new Server()
 
