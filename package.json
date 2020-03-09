@@ -1,6 +1,6 @@
 {
   "name": "better-messenger",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "a better way to communicate for the iframe-based micro front-end",
   "scripts": {
     "build": "rollup -c --environment TARGET:production",
@@ -8,6 +8,7 @@
     "fix": "eslint --fix ./src/*.ts"
   },
   "main": "lib/index.js",
+  "jsdelivr": "dist/index.js",
   "unpkg": "dist/index.js",
   "module": "es/index.js",
   "types": "types/index.d.ts",

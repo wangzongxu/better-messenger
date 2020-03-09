@@ -10,7 +10,7 @@ enum STATE {
 }
 
 type RequestInterceptor = (req: Request) => Request
-type ResponseInterceptor = (data: Response) => Response
+type ResponseInterceptor = (res: Response) => Response
 
 const defaultRequestInterceptor: RequestInterceptor = r => r
 const defaultResponseInterceptor: ResponseInterceptor = r => r
